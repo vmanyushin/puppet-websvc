@@ -17,6 +17,6 @@
     ProxyPassMatch ^/img/head.gif$  http://127.0.0.1:8000
     ProxyPassMatch ^/(.*)$          http://www.<%= @domain %>/$1
 
-    ProxyPassReverse / http://www.<%= @domain %>
+    ProxyPassReverse / http://www.<%= @domain %>/
 </VirtualHost>
 
